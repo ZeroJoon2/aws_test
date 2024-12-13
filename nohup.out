@@ -888,3 +888,377 @@ ValueError: not enough values to unpack (expected 2, got 1)
 [IPKernelApp] WARNING | Parent appears to have exited, shutting down.
 [IPKernelApp] WARNING | Parent appears to have exited, shutting down.
 [IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[I 2024-12-13 17:07:02.473 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-12-13 17:07:02.478 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-12-13 17:07:02.483 ServerApp] jupyterlab | extension was successfully linked.
+[W 2024-12-13 17:07:02.484 JupyterNotebookApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-12-13 17:07:02.487 ServerApp] ServerApp.password config is deprecated in 2.0. Use PasswordIdentityProvider.hashed_password.
+[I 2024-12-13 17:07:02.487 ServerApp] notebook | extension was successfully linked.
+[I 2024-12-13 17:07:02.682 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-13 17:07:02.717 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-13 17:07:02.719 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-12-13 17:07:02.720 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-12-13 17:07:02.722 LabApp] JupyterLab extension loaded from /home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyterlab
+[I 2024-12-13 17:07:02.722 LabApp] JupyterLab application directory is /home/ubuntu/anaconda3/envs/spark_start/share/jupyter/lab
+[I 2024-12-13 17:07:02.722 LabApp] Extension Manager is 'pypi'.
+[W 2024-12-13 17:07:02.722 LabApp] Failed to instantiate the extension manager pypi. Falling back to read-only manager.
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyterlab/labapp.py", line 837, in initialize_handlers
+        ext_manager = manager_factory(app_options, listings_config, self)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyterlab/extensions/__init__.py", line 46, in get_pypi_manager
+        return PyPIExtensionManager(app_options, ext_options, parent)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyterlab/extensions/pypi.py", line 134, in __init__
+        self._httpx_client = httpx.AsyncClient(proxies=proxies)
+    TypeError: __init__() got an unexpected keyword argument 'proxies'
+[I 2024-12-13 17:07:02.726 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-13 17:07:02.730 ServerApp] notebook | extension was successfully loaded.
+[I 2024-12-13 17:07:02.730 ServerApp] Serving notebooks from local directory: /home/lab17/git
+[I 2024-12-13 17:07:02.730 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2024-12-13 17:07:02.730 ServerApp] http://ip-172-31-3-9:8917/tree
+[I 2024-12-13 17:07:02.730 ServerApp]     http://127.0.0.1:8917/tree
+[I 2024-12-13 17:07:02.730 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-13 17:07:02.746 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2024-12-13 17:07:04.888 ServerApp] 404 GET /api/contents/git/src/241211_YellowTaxi2.ipynb?content=0&hash=1&1734077225966 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.42ms referer=http://15.168.86.105:8917/notebooks/git/src/241211_YellowTaxi2.ipynb
+[W 2024-12-13 17:07:04.888 ServerApp] 404 GET /api/contents/git/src/241211_YellowTaxi2.ipynb?content=0&hash=1&1734077225966 (125.129.250.60): No such file or directory: git/src/241211_YellowTaxi2.ipynb
+[I 2024-12-13 17:07:05.200 ServerApp] Uploading file to /git/src/241211_YellowTaxi2.ipynb
+[W 2024-12-13 17:07:05.201 ServerApp] Notebook git/src/241211_YellowTaxi2.ipynb is not trusted
+[W 2024-12-13 17:07:06.509 ServerApp] Notebook git/src/241211_YellowTaxi2.ipynb is not trusted
+[I 2024-12-13 17:07:07.160 ServerApp] Kernel started: a904dd8d-227a-4189-83b2-537fafc413e0
+[I 2024-12-13 17:07:07.604 ServerApp] Connecting to kernel a904dd8d-227a-4189-83b2-537fafc413e0.
+[I 2024-12-13 17:07:07.685 ServerApp] Connecting to kernel a904dd8d-227a-4189-83b2-537fafc413e0.
+[I 2024-12-13 17:07:07.754 ServerApp] Connecting to kernel a904dd8d-227a-4189-83b2-537fafc413e0.
+[W 2024-12-13 17:07:14.195 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077235274 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:14.195 ServerApp] wrote error: 'Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8)
+[W 2024-12-13 17:07:14.200 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077235274 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 5.04ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+24/12/13 17:07:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[W 2024-12-13 17:07:15.233 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:15.272 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 39.18ms referer=None
+[W 2024-12-13 17:07:15.304 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077236385 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:15.305 ServerApp] wrote error: 'Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8)
+[W 2024-12-13 17:07:15.306 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077236385 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.89ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[W 2024-12-13 17:07:16.193 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077237268 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:16.194 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:16.194 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077237268 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 2.26ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:17.220 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:17.222 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 2.64ms referer=None
+[W 2024-12-13 17:07:17.250 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077238330 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:17.250 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:17.250 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077238330 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.06ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:18.224 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:18.225 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.98ms referer=None
+[W 2024-12-13 17:07:18.259 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077239340 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:18.259 ServerApp] wrote error: 'Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8)
+[W 2024-12-13 17:07:18.260 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077239340 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.77ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:20.227 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:20.229 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.47ms referer=None
+[W 2024-12-13 17:07:20.268 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077241344 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:20.268 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:20.269 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077241344 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.68ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:22.223 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:22.224 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.89ms referer=None
+[W 2024-12-13 17:07:22.276 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077243356 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:22.277 ServerApp] wrote error: 'Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8)
+[W 2024-12-13 17:07:22.277 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077243356 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.75ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:23.197 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077244277 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:23.197 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:23.198 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077244277 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.79ms referer=http://15.168.86.105:8917/notebooks/git/src/241213_MLlib_ALS.ipynb
+[W 2024-12-13 17:07:24.215 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:24.215 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.00ms referer=None
+[W 2024-12-13 17:07:24.243 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077245324 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:24.243 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:24.244 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077245324 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.75ms referer=http://15.168.86.105:8917/notebooks/git/src/241213_MLlib_ALS.ipynb
+[W 2024-12-13 17:07:25.227 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:25.228 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.83ms referer=None
+[W 2024-12-13 17:07:25.262 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077246342 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:25.262 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:25.262 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077246342 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.72ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:26.216 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:26.217 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.69ms referer=None
+[W 2024-12-13 17:07:26.244 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077247325 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:26.244 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:26.246 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077247325 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.97ms referer=http://15.168.86.105:8917/notebooks/git/src/241213_MLlib_ALS.ipynb
+[W 2024-12-13 17:07:26.298 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:26.299 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.27ms referer=None
+[W 2024-12-13 17:07:26.332 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077247412 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:26.332 ServerApp] wrote error: 'Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8)
+[W 2024-12-13 17:07:26.332 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077247412 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.15ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:30.212 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:30.213 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.24ms referer=None
+[W 2024-12-13 17:07:30.240 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077251321 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:30.240 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:30.242 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077251321 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.65ms referer=http://15.168.86.105:8917/notebooks/git/src/241213_MLlib_ALS.ipynb
+[W 2024-12-13 17:07:32.216 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:32.217 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.04ms referer=None
+[W 2024-12-13 17:07:32.250 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077253331 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:32.250 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:32.250 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077253331 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.09ms referer=http://15.168.86.105:8917/notebooks/git/src/241213_MLlib_ALS.ipynb
+[W 2024-12-13 17:07:36.219 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:36.220 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.39ms referer=None
+[W 2024-12-13 17:07:36.253 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077257334 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:36.253 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:36.254 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077257334 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.19ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:40.218 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:40.218 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=7d244fe8-72a4-4d1a-a4c3-55a79ce377d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.98ms referer=None
+[W 2024-12-13 17:07:40.251 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077261332 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:40.251 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:40.252 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077261332 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.64ms referer=http://15.168.86.105:8917/notebooks/git/src/241213_MLlib_ALS.ipynb
+[I 2024-12-13 17:07:41.799 ServerApp] Starting buffering for a904dd8d-227a-4189-83b2-537fafc413e0:e52c342f-3c95-4d7e-b9f8-013226ff55c9
+[W 2024-12-13 17:07:42.215 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:42.216 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8/channels?session_id=18b8d86c-cc4e-4f62-80e6-6f2c755900d4 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.92ms referer=None
+[W 2024-12-13 17:07:42.243 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077263324 (125.129.250.60): Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8
+[W 2024-12-13 17:07:42.243 ServerApp] wrote error: 'Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 5c26d54c-8f48-48f4-91f7-c78092a3bdc8)
+[W 2024-12-13 17:07:42.243 ServerApp] 404 GET /api/kernels/5c26d54c-8f48-48f4-91f7-c78092a3bdc8?1734077263324 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.79ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:44.224 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:44.226 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.58ms referer=None
+[W 2024-12-13 17:07:44.253 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077265334 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:44.253 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:44.253 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077265334 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.25ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:48.213 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:48.213 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690/channels?session_id=566ac216-e82d-44c6-9f38-f393cc05b945 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.24ms referer=None
+[W 2024-12-13 17:07:48.240 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077269322 (125.129.250.60): Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690
+[W 2024-12-13 17:07:48.240 ServerApp] wrote error: 'Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690'
+    Traceback (most recent call last):
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 506, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/home/ubuntu/anaconda3/envs/spark_start/lib/python3.8/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 537, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 32c08da0-723b-40f6-a2f0-17f331fec690)
+[W 2024-12-13 17:07:48.241 ServerApp] 404 GET /api/kernels/32c08da0-723b-40f6-a2f0-17f331fec690?1734077269322 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 0.82ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:57.701 ServerApp] 404 GET /api/contents/git/src/data/trips?content=1&hash=0&1734077278773 (bd481073dc2b4a5e922d23bf2ee30598@125.129.250.60) 1.25ms referer=http://15.168.86.105:8917/tree/git/src/data/trips
+[W 2024-12-13 17:07:57.701 ServerApp] 404 GET /api/contents/git/src/data/trips?content=1&hash=0&1734077278773 (125.129.250.60): No such file or directory: git/src/data/trips
+[I 2024-12-13 17:08:02.388 ServerApp] Connecting to kernel a904dd8d-227a-4189-83b2-537fafc413e0.
+[I 2024-12-13 17:08:02.501 ServerApp] Starting buffering for a904dd8d-227a-4189-83b2-537fafc413e0:23559bca-3e5a-43be-94aa-278b957c8bc8
+[W 2024-12-13 17:08:43.136 ServerApp] Notebook src/241211_YellowTaxi2.ipynb is not trusted
+[I 2024-12-13 17:08:43.692 ServerApp] Connecting to kernel a904dd8d-227a-4189-83b2-537fafc413e0.
+[W 2024-12-13 17:08:43.848 ServerApp] Notebook src/241211_YellowTaxi2.ipynb is not trusted
+[I 2024-12-13 17:08:43.993 ServerApp] Starting buffering for a904dd8d-227a-4189-83b2-537fafc413e0:b7ed26a2-66e7-44c4-8985-511f99a06c24
+[I 2024-12-13 17:08:44.497 ServerApp] Kernel started: f30c53c0-a19b-4bbd-bc9c-0416c7b58710
+[I 2024-12-13 17:08:44.950 ServerApp] Connecting to kernel f30c53c0-a19b-4bbd-bc9c-0416c7b58710.
+[I 2024-12-13 17:08:51.324 ServerApp] Starting buffering for f30c53c0-a19b-4bbd-bc9c-0416c7b58710:38534124-f313-41e2-bd39-9f46bc287fb4
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
