@@ -1475,3 +1475,8 @@ Tue Dec 17 14:07:42 KST 2024 WARN: Establishing SSL connection without server's 
 [I 2024-12-17 18:19:17.570 ServerApp] Saving file at /src/241217_mysql_pyspark.ipynb
 [I 2024-12-17 18:19:21.121 ServerApp] Saving file at /src/241217_mysql_pyspark.ipynb
 [I 2024-12-17 18:19:23.103 ServerApp] Starting buffering for dac045f9-793d-4b83-b175-84ef33d9ec27:4a55ef17-bf86-489b-ac39-a72474aec300
+[C 2024-12-17 18:21:32.163 ServerApp] received signal 15, stopping
+[I 2024-12-17 18:21:32.163 ServerApp] Shutting down 5 extensions
+[I 2024-12-17 18:21:32.165 ServerApp] Shutting down 2 kernels
+[I 2024-12-17 18:21:32.165 ServerApp] Kernel shutdown: dac045f9-793d-4b83-b175-84ef33d9ec27
+[I 2024-12-17 18:21:32.166 ServerApp] Kernel shutdown: e6d97556-d048-41a1-a464-866fb086cfbd
