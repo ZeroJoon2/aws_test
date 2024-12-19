@@ -1,57 +1,76 @@
--- DATE Å¸ÀÔÀ¸·Î ¼öÁ¤ÇØ¼­ hh:mm:ss ³¯¸®±â
+-- DATE ¿¿¿¿ ¿¿¿¿ hh:mm:ss ¿¿
 ALTER TABLE tbBaseInterestRate
-ALTER COLUMN date DATE
+MODIFY COLUMN date DATE;
 
--- base_interest_rate ÄÃ·³¸í ¼öÁ¤ ¹× type ¼öÁ¤
-EXEC sp_rename 'tbBaseInterestRate.[base_interest_rate]', 'BaseInterestRate', 'COLUMN'
-
+-- ¿¿¿ ¿¿ ¿ ¿¿ ¿¿
 ALTER TABLE tbBaseInterestRate
-ALTER COLUMN BaseInterestRate varchar(5)
+CHANGE COLUMN base_interest_rate BaseInterestRate VARCHAR(5);
 
--- tbAPTPrice ÄÃ·³¸í ¼öÁ¤
-EXEC sp_rename 'tbAPTPrice.[¹°°Ç±Ý¾×(¸¸¿ø)]', '¹°°Ç±Ý¾×_¸¸¿ø', 'COLUMN'
-EXEC sp_rename 'tbAPTPrice.[°Ç¹°¸éÀû(§³)]', '°Ç¹°¸éÀû_m2', 'COLUMN'
-EXEC sp_rename 'tbAPTPrice.[ÅäÁö¸éÀû(§³)]', 'ÅäÁö¸éÀû_m2', 'COLUMN'
-EXEC sp_rename 'tbAPTPrice.[½Å°íÇÑ °³¾÷°øÀÎÁß°³»ç ½Ã±º±¸¸í]', '½Å°í_°øÀÎÁß°³»ç_Áö¿ª', 'COLUMN'
+-- ¿¿¿ ¿¿
+ALTER TABLE tbAPTPrice
+CHANGE COLUMN `¿¿¿¿(¿¿)` ¿¿¿¿_¿¿ VARCHAR(2000);
 
--- tbAPTPrice ÄÃ·³ type ¼öÁ¤
-ALTER TABLE tbAPTPrice ALTER COLUMN Á¢¼ö¿¬µµ CHAR(4) -- 4ÀÚ¸® ¿¬µµ
-ALTER TABLE tbAPTPrice ALTER COLUMN ÀÚÄ¡±¸ÄÚµå VARCHAR(10) -- 5ÀÚ¸®°¡ ÃÖ´ëÀÎµ¥ È¤½Ã ¸ð¸£´Ï ¿©À¯ÀÖ°Ô
-ALTER TABLE tbAPTPrice ALTER COLUMN ÀÚÄ¡±¸¸í NVARCHAR(MAX)
-ALTER TABLE tbAPTPrice ALTER COLUMN ¹ýÁ¤µ¿ÄÚµå VARCHAR(10) -- 5ÀÚ¸®°¡ ÃÖ´ëÀÎµ¥ È¤½Ã ¸ð¸£´Ï ¿©À¯ÀÖ°Ô
-ALTER TABLE tbAPTPrice ALTER COLUMN ¹ýÁ¤µ¿¸í NVARCHAR(MAX)
-ALTER TABLE tbAPTPrice ALTER COLUMN Áö¹ø±¸ºÐ VARCHAR(5)
-ALTER TABLE tbAPTPrice ALTER COLUMN Áö¹ø±¸ºÐ¸í VARCHAR(5)
-ALTER TABLE tbAPTPrice ALTER COLUMN º»¹ø VARCHAR(10) -- 4ÀÚ¸®°¡ ÃÖ´ëÀÎµ¥ È¤½Ã ¸ð¸£´Ï ¿©À¯ÀÖ°Ô
-ALTER TABLE tbAPTPrice ALTER COLUMN ºÎ¹ø VARCHAR(10) -- 4ÀÚ¸®°¡ ÃÖ´ëÀÎµ¥ È¤½Ã ¸ð¸£´Ï ¿©À¯ÀÖ°Ô
-ALTER TABLE tbAPTPrice ALTER COLUMN °Ç¹°¸í VARCHAR(MAX)
-ALTER TABLE tbAPTPrice ALTER COLUMN ¹°°Ç±Ý¾×_¸¸¿ø VARCHAR(2000)
-ALTER TABLE tbAPTPrice ALTER COLUMN °Ç¹°¸éÀû_m2 VARCHAR(2000)
-ALTER TABLE tbAPTPrice ALTER COLUMN Ãþ VARCHAR(10)
-ALTER TABLE tbAPTPrice ALTER COLUMN ±Ç¸®±¸ºÐ VARCHAR(MAX)
-ALTER TABLE tbAPTPrice ALTER COLUMN Ãë¼ÒÀÏ DATE
-ALTER TABLE tbAPTPrice ALTER COLUMN °ÇÃà³âµµ CHAR(4) -- 4ÀÚ¸® ¿¬µµ
-ALTER TABLE tbAPTPrice ALTER COLUMN °Ç¹°¿ëµµ VARCHAR(2000)
-ALTER TABLE tbAPTPrice ALTER COLUMN ½Å°í±¸ºÐ VARCHAR(2000)
-ALTER TABLE tbAPTPrice ALTER COLUMN ½Å°í_°øÀÎÁß°³»ç_Áö¿ª VARCHAR(2000)
+ALTER TABLE tbAPTPrice
+CHANGE COLUMN `¿¿¿¿(¿)` ¿¿¿¿_m2 VARCHAR(2000);
 
--- Æ¯Á¤ ÄÃ·³ ÀçÀÛ¾÷
-ALTER TABLE tbAPTPrice ADD °è¾àÀÏ_DATE DATE
+ALTER TABLE tbAPTPrice
+CHANGE COLUMN `¿¿¿¿(¿)` ¿¿¿¿_m2 VARCHAR(2000);
 
--- BIGINT ´Ù³à¿À¸é ¼Ò¼öÁ¡ Á¦°ÅµÈ´Ù°í ÇÔ
+ALTER TABLE tbAPTPrice
+CHANGE COLUMN `¿¿¿ ¿¿¿¿¿¿¿ ¿¿¿¿` ¿¿_¿¿¿¿¿_¿¿ VARCHAR(2000);
+
+
+-- ¿¿ ¿¿ ¿¿
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿ CHAR(4);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿¿ VARCHAR(10);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿ NVARCHAR(2000);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿¿ VARCHAR(10);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿ NVARCHAR(2000);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿ VARCHAR(5);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿¿ VARCHAR(5);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿ VARCHAR(10);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿ VARCHAR(10);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿ VARCHAR(2000);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿_¿¿ VARCHAR(2000);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿_m2 VARCHAR(2000);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿ VARCHAR(10);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿ VARCHAR(2000);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿ DATE;
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿ CHAR(4);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿ VARCHAR(2000);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿¿¿ VARCHAR(2000);
+ALTER TABLE tbAPTPrice MODIFY COLUMN ¿¿_¿¿¿¿¿_¿¿ VARCHAR(2000);
+
+-- ¿¿¿_DATE ¿¿ ¿¿
+ALTER TABLE tbAPTPrice ADD COLUMN ¿¿¿_DATE DATE;
+ALTER TABLE tbAPTPrice modify COLUMN ¿¿¿_DATE VARCHAR(10);
+
+-- BIGINT ¿¿¿¿ ¿¿¿ ¿¿¿¿¿ ¿
+SET SQL_SAFE_UPDATES = 0;
+
 UPDATE tbAPTPrice
-set °è¾àÀÏ_DATE = CAST(CONVERT(VARCHAR(20), CAST(°è¾àÀÏ AS BIGINT)) AS DATE)
+SET ¿¿¿_DATE = CAST(CAST(¿¿¿ AS UNSIGNED) AS DATE);
 
--- È®ÀÎ
-SELECT top 10 °è¾àÀÏ FROM tbAPTPrice
+SET SQL_SAFE_UPDATES = 1;
 
--- ±âÁ¸ ÄÃ·³ ³¯¸®±â
-ALTER TABLE tbAPTPrice DROP COLUMN °è¾àÀÏ
+-- ¿¿ ¿¿ ¿¿
+ALTER TABLE tbAPTPrice DROP COLUMN ¿¿¿;
+
+-- ¿¿¿ ¿¿
+SELECT ¿¿¿_DATE FROM tbAPTPrice LIMIT 10;
+
+-- idx ¿¿ ¿¿
+ALTER TABLE tbAPTPrice ADD COLUMN idx int AUTO_INCREMENT PRIMARY KEY;
 
 
+-- ¿¿¿ ¿¿ ¿¿¿ ¿¿
+CREATE TABLE lg_prediction (
+    lg_idx INT AUTO_INCREMENT PRIMARY KEY,
+    idx INT NOT NULL,
+    prediction VARCHAR(10000),
+    getdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (idx) REFERENCES tbAPTPrice(idx)
+);
 
-
-
-
-
-
+ALTER TABLE lg_prediction
+MODIFY COLUMN prediction VARCHAR(10000) NOT NULL;
