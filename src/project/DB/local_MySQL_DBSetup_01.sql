@@ -75,4 +75,17 @@ CREATE TABLE lg_prediction (
 ALTER TABLE lg_prediction
 MODIFY COLUMN prediction VARCHAR(10000) NOT NULL;
 
-
+CREATE TABLE tbMLData (
+    index_idx INT AUTO_INCREMENT PRIMARY KEY,   -- PK 및 자동 증가 설정
+    idx INT NOT NULL,                           -- tbAPTPrice와의 외래 키
+    jachigu_code VARCHAR(10),                  
+    law_code VARCHAR(10),
+    building_usage VARCHAR(2000),
+    sumbit_year CHAR(4),
+    building_price VARCHAR(2000),
+    building_size VARCHAR(2000),
+    building_year CHAR(4),
+    floor_range VARCHAR(255) NOT NULL,          -- 층수 범위
+    getdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (idx) REFERENCES tbAPTPrice(idx) -- tbAPTPrice와 1:M 관계
+);
